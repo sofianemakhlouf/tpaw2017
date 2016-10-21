@@ -1,11 +1,12 @@
 $(document).ready(function(){
  
  ("#submitForm").on('click',function(){
-  (("#inputEmail").val()==""){
-   ('.modal').modal('show');
+  if(§("#inputEmail3").val()==""){
+   §('.modal-body').html('veuillez remplir les champs svp');
   }
-  {
-   ('.modal-body').html('fff');
+  else{
+   §('.modal-body').html('fff');
+   §('.modal').modal('show'); 
   }
  })
 });
