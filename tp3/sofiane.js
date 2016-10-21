@@ -1,4 +1,5 @@
 §(function(){
-  if(§"Nom").val()=='')
-    }
-  §(".modal").modal("show")
+ 
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
