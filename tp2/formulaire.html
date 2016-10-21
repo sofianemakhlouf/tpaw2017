@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<title>formulaire</title>
+<link rel="stylesheet" href="formulaire.css"/>
+<script type="text/javascript" src="formulaire.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+<H1><b>Saisie d'une fiche "Personne"</b></H1>
+
+<form id="formulaire"method="post" action="traitement.php">
+
+<table border="0"width="100%">
+   <tr>
+      <th> Nom </th>
+	  <th><input type="text" name="Nom" id="Nom"> </th>
+	</tr>
+<tr>	
+   <th>Prénom</th>
+   <th><input type="text" name="Prénom" id="Prénom"> </th>
+   </tr>
+   <tr>
+   <th>Date de naissance </th>
+   <th><input type="text" name="Date de naissance" placeholder="JJ/MM/AAAA"/ id="Date de naissance"> </th>
+   </tr>
+   <tr>
+   <th>Adresse</th>
+   <th><input type="text" name="Adresse" id="Adresse"> </th>
+   </tr>
+   <tr>
+   <th>Mail</th>
+   <th><input type="text" name="Mail" id="Mail"> </th>
+   </tr>
+   <tr>
+   <th> </th>
+   <th> <input type="button" value="Valider" onclick="validation();"> </th>
+   </tr>
+   
+   </table>
+   
+ Le nom doit contenir au moins 5 caractères
+   
+</form>
+<div id="error"> </div>
+<div id="resultat"> </div>
+
+</body>
+</html>
