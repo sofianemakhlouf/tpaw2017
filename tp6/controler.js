@@ -13,4 +13,4 @@ $scope.meteo = data;
 $scope.errorMsg = "Hum. Error... please retry.";
 });
 }
-}]);
+}] );
